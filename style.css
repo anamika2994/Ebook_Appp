@@ -1,0 +1,386 @@
+/* Custom Styles for Ebook Store */
+.bg-custom {
+    background-color: #263238 !important;
+}
+
+.navbar .nav-item:hover .nav-link {
+    background-color: white;
+    color: #263238 !important;
+    border-radius: 15px;
+    padding: 4px 10px;
+    transition: all 0.3s ease;
+}
+
+/* Card hover effects */
+.crd-ho {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.crd-ho:hover {
+    background-color: #f8f8f8;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Custom buttons */
+.btn-custom {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    color: white;
+}
+
+.btn-success-custom {
+    background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-success-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 176, 155, 0.4);
+    color: white;
+}
+
+/* Table styles */
+.table thead {
+    background-color: #263238 !important;
+    color: white !important;
+}
+
+.table th {
+    border: none;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.table td {
+    border: none;
+    padding: 12px 15px;
+    vertical-align: middle;
+}
+
+/* Footer styles */
+footer {
+    background: #263238;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 80px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #e53935;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    font-size: 22px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #e53935;
+    transform: translateY(-3px);
+}
+
+/* Custom form styles */
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Loading spinner */
+.loading-spinner {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.loading-spinner.show {
+    display: block;
+}
+
+/* Book card styles */
+.book-card {
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.book-img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Section titles */
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    color: #263238;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #e53935;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+/* Price text */
+.price-text {
+    font-weight: bold;
+    color: #e53935;
+    font-size: 18px;
+}
+
+/* View all button */
+.view-all-btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.view-all-btn a {
+    padding: 8px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+/* Ebook title style */
+.ebook-title {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #000000;
+    text-shadow: none;
+    margin-left: 10px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.ebook-title:hover {
+    color: #444444;
+    transform: scale(1.05);
+}
+
+/* Home button style */
+.home-btn {
+    border-bottom: 3px solid #ffc107;
+    font-weight: bold;
+}
+
+.home-btn:hover {
+    color: #ffc107 !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+    
+    .ebook-title {
+        font-size: 20px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .btn-custom, .btn-success-custom {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Alert customization */
+.alert {
+    border-radius: 10px;
+    border: none;
+}
+
+.alert-success {
+    background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%);
+    color: white;
+}
+
+.alert-danger {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    color: white;
+}
+
+.alert-info {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+/* Badge customization */
+.badge {
+    border-radius: 15px;
+    padding: 6px 12px;
+    font-weight: 600;
+}
+
+/* Modal customization */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Progress bar */
+.progress {
+    border-radius: 10px;
+    height: 8px;
+}
+
+.progress-bar {
+    border-radius: 10px;
+}
+
+/* Custom shadows */
+.shadow-custom {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+}
+
+.shadow-custom:hover {
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2) !important;
+}
+
+/* Text utilities */
+.text-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Background utilities */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+.bg-gradient-success {
+    background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%) !important;
+}
+
+.bg-gradient-warning {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+}
+
+/* Animation classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.5s ease-out;
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.slide-in-right {
+    animation: slideInRight 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Pulse animation */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Bounce animation */
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+}
+
+/* Loading dots */
+.loading-dots:after {
+    content: ' .';
+    animation: dots 1.5s steps(5, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% { color: rgba(0,0,0,0); text-shadow: .25em 0 0 rgba(0,0,0,0), .5em 0 0 rgba(0,0,0,0); }
+    40% { color: black; text-shadow: .25em 0 0 rgba(0,0,0,0), .5em 0 0 rgba(0,0,0,0); }
+    60% { text-shadow: .25em 0 0 black, .5em 0 0 rgba(0,0,0,0); }
+    80%, 100% { text-shadow: .25em 0 0 black, .5em 0 0 black; }
+}

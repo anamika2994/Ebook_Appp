@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
+                        https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+	version="6.0">
+
+
+	<display-name>Ebook App</display-name>
+
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.user.servlet.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.user.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.user.servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/admin/logout</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BooksAdd</servlet-name>
+		<servlet-class>com.admin.servlet.BooksAdd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BooksAdd</servlet-name>
+		<url-pattern>/add_book</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>EditBooksServlet</servlet-name>
+		<servlet-class>com.admin.servlet.EditBooksServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditBooksServlet</servlet-name>
+		<url-pattern>/editBooks</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BooksDeleteServlet</servlet-name>
+		<servlet-class>com.admin.servlet.BooksDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BooksDeleteServlet</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CartServlet</servlet-name>
+		<servlet-class>com.user.servlet.CartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CartServlet</servlet-name>
+		<url-pattern>/cart</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PDFDownloadServlet</servlet-name>
+		<servlet-class>com.user.servlet.PDFDownloadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PDFDownloadServlet</servlet-name>
+		<url-pattern>/downloadPDF</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UserNotesServlet</servlet-name>
+		<servlet-class>com.user.servlet.UserNotesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserNotesServlet</servlet-name>
+		<url-pattern>/saveNotes</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>OrderProcessingServlet</servlet-name>
+		<servlet-class>com.user.servlet.OrderProcessingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OrderProcessingServlet</servlet-name>
+		<url-pattern>/processOrder</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ContactMessageServlet</servlet-name>
+		<servlet-class>com.user.servlet.ContactMessageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ContactMessageServlet</servlet-name>
+		<url-pattern>/sendMessage</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdatePasswordServlet</servlet-name>
+		<servlet-class>com.user.servlet.UpdatePasswordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdatePasswordServlet</servlet-name>
+		<url-pattern>/updatePassword</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateProfileServlet</servlet-name>
+		<servlet-class>com.user.servlet.UpdateProfileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateProfileServlet</servlet-name>
+		<url-pattern>/updateProfile</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Search Servlet -->
+	<servlet>
+		<servlet-name>SearchServlet</servlet-name>
+		<servlet-class>com.user.servlet.SearchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchServlet</servlet-name>
+		<url-pattern>/search</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CartRemoveServlet</servlet-name>
+		<servlet-class>com.user.servlet.CartRemoveServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CartRemoveServlet</servlet-name>
+		<url-pattern>/CartRemove</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>OrderServlet</servlet-name>
+		<servlet-class>com.admin.servlet.OrderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OrderServlet</servlet-name>
+		<url-pattern>/admin/orders</url-pattern>
+	</servlet-mapping>
+
+	<!-- Order Details Servlet -->
+	<servlet>
+		<servlet-name>OrderDetailsServlet</servlet-name>
+		<servlet-class>com.admin.servlet.OrderDetailsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>OrderDetailsServlet</servlet-name>
+		<url-pattern>/admin/orderDetails</url-pattern>
+	</servlet-mapping>
+
+	<!-- Update Order Status Servlet -->
+	<servlet>
+		<servlet-name>UpdateOrderStatusServlet</servlet-name>
+		<servlet-class>com.admin.servlet.UpdateOrderStatusServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateOrderStatusServlet</servlet-name>
+		<url-pattern>/admin/updateOrderStatus</url-pattern>
+	</servlet-mapping>
+	<!-- Rating Servlet -->
+
+	<!-- Rating Servlet -->
+<servlet>
+    <servlet-name>RatingServlet</servlet-name>
+    <servlet-class>com.user.servlet.RatingServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RatingServlet</servlet-name>
+    <url-pattern>/RatingServlet</url-pattern>
+</servlet-mapping>
+
+<!-- Book Details Servlet -->
+<servlet>
+    <servlet-name>BookDetailsServlet</servlet-name>
+    <servlet-class>com.user.servlet.BookDetailsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>BookDetailsServlet</servlet-name>
+    <url-pattern>/book_details</url-pattern>
+</servlet-mapping>
+
+
+</web-app>
